@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercice 6</title>
+  </head>
+  <body>
+    <h1>Bienvenue sur mon site web</h1>
+    <p>Veuillez remplir ces informations pour pouvoir continuer</p>
+    <form method="post" action="">
+      <fieldset>
+        <legend>Informations personnelles</legend>
+        <label for="username">Nom: </label>
+        <input type="text" name="username" id="username" required autofocus />
+        <br />
+        <br />
+        <label for="userfname">Prenom: </label>
+        <input type="text" name="userfname" id="userfname" />
+        <br />
+        <br />
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" required />
+        <br />
+        <br />
+        <label for="birthdate">Date de naissance: </label>
+        <input type="date" name="birthdate" id="birthdate" required />
+        <br />
+        <br />
+        <label for="nationality">Nationalite: </label>
+        <select name="nationality" id="nationality" required>
+          <optgroup label="Afrique">
+            <option value="cameroun" selected>Cameroun</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="gabon">Gabon</option>
+            <option value="senegal">Senegal</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option value="france">France</option>
+            <option value="italie">Italie</option>
+            <option value="espagne">Espagne</option>
+            <option value="allemagne">Allemagne</option>
+          </optgroup>
+          <optgroup label="Amerique">
+            <option value="usa">Etats-Unis</option>
+            <option value="canada">Canada</option>
+            <option value="argentine">Argentine</option>
+            <option value="mexique">Mexique</option>
+          </optgroup>
+          <optgroup label="Asie">
+            <option value="japon">Japon</option>
+            <option value="chine">Chine</option>
+            <option value="inde">Inde</option>
+            <option value="arabie">Arabie Saoudite</option>
+          </optgroup>
+        </select>
+        <br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Informations de contact</legend>
+        <label for="mail">Adresse mail: </label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <br />
+        <label for="tel">Telephone: </label>
+        <input type="tel" name="tel" id="tel" required />
+        <br />
+        <br />
+        <label for="adresse">Adresse: </label>
+        <input type="text" name="adresse" id="adresse" />
+        <br />
+        <br />
+        <label for="ville">Ville: </label>
+        <input type="text" name="ville" id="ville" />
+        <br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Informations supplementaires</legend>
+        <label for="genre">Genre: </label>
+        <input type="radio" name="genre" id="genre" />Masculin
+        <input type="radio" name="genre" id="genre" />Feminin
+        <input type="radio" name="genre" id="genre" />Non binaire
+        <input type="radio" name="genre" id="genre" />Autre
+        <br />
+        <br />
+        <label for="loisirs">Loisirs: </label>
+        <br />
+        <input type="checkbox" name="musique" id="musique" />Musique
+        <br />
+        <input type="checkbox" name="sport" id="sport" />Sport
+        <br />
+        <input type="checkbox" name="films" id="films" />Films
+        <br />
+        <input type="checkbox" name="lecture" id="lecture" />Lecture
+        <br />
+        <input type="checkbox" name="voyage" id="voyage" />Voyage
+        <br />
+        <input type="checkbox" name="jv" id="jv" />Jeux videos
+        <br />
+        <br />
+        <label for="cv">CV: </label>
+        <input type="file" accept=".pdf, .docx" name="cv" id="cv" />
+      </fieldset>
+      <br />
+      <br />
+      <input type="submit" name="submit" id="submit" value="Envoyer" />
+      <input type="reset" name="reset" id="reset" value="Effacer" />
+    </form>
+  </body>
+</html>

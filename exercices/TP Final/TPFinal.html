@@ -342,8 +342,35 @@
       <input type="text" name="name" id="name" />
       <label for="mail">Mail: </label>
       <input type="email" name="mail" id="mail" />
-      <label for="city">Ville: </label>
-      <input type="text" name="city" id="city" />
+      <label for="city">Date de naissance: </label>
+      <input type="date" name="city" id="city" />
+      <label for="pays">Pays: </label>
+      <select name="pays" id="pays">
+        <optgroup label="Afrique">
+          <option value="cameroun" selected>Cameroun</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="gabon">Gabon</option>
+          <option value="senegal">Senegal</option>
+        </optgroup>
+        <optgroup label="Europe">
+          <option value="france">France</option>
+          <option value="italie">Italie</option>
+          <option value="espagne">Espagne</option>
+          <option value="allemagne">Allemagne</option>
+        </optgroup>
+        <optgroup label="Amerique">
+          <option value="usa">Etats-Unis</option>
+          <option value="canada">Canada</option>
+          <option value="argentine">Argentine</option>
+          <option value="mexique">Mexique</option>
+        </optgroup>
+        <optgroup label="Asie">
+          <option value="japon">Japon</option>
+          <option value="chine">Chine</option>
+          <option value="inde">Inde</option>
+          <option value="arabie">Arabie Saoudite</option>
+        </optgroup>
+      </select>
       <input type="submit" value="Envoyer" />
     </form>
   </body>
